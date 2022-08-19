@@ -1,8 +1,16 @@
+import java.sql.Statement;
+
 public class Loan {
     private String borrower;
     private int amount;
     private boolean isPaid;
     private double interestRate;
+
+    private static double maxLoanValue;
+
+    public static double getMaxLoanValue() {
+        return maxLoanValue;
+    }
 
     static private double maxLoanAmount;
 
